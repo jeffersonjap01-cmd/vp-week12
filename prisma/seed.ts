@@ -18,22 +18,19 @@ async function main() {
     prisma.customer.create({
       data: {
         name: 'Alice Johnson',
-        phone: '+1-555-0101',
-        email: 'alice.johnson@email.com'
+        phone: '+1-555-0101'
       }
     }),
     prisma.customer.create({
       data: {
         name: 'Bob Smith',
-        phone: '+1-555-0102',
-        email: 'bob.smith@email.com'
+        phone: '+1-555-0102'
       }
     }),
     prisma.customer.create({
       data: {
         name: 'Carol Davis',
-        phone: '+1-555-0103',
-        email: 'carol.davis@email.com'
+        phone: '+1-555-0103'
       }
     })
   ])
@@ -165,7 +162,7 @@ async function main() {
   // Display some sample data
   console.log('\n👤 Sample Customers:')
   for (const customer of customers) {
-    console.log(`   - ${customer.name} (${customer.email})`)
+    console.log(`   - ${customer.name} (${customer.phone})`)
   }
 
   console.log('\n🍽️ Sample Restaurants:')
