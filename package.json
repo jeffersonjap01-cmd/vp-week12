@@ -13,6 +13,9 @@
     "prisma:reset": "prisma migrate reset",
     "setup": "npm run prisma:generate && npm run prisma:migrate && npm run prisma:seed"
   },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "keywords": [
     "express",
     "api",
